@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sign up</title>
+<style>
+blockquote {
+font-family: Georgia, serif;
+font-size: 14px;
+font-style: italic;
+margin: 0.25em 0;
+padding: 0.25em 40px;
+line-height: 1.45;
+position: relative;
+color: #383838;
+}
+
+</style>
+<link href="style.css" rel="stylesheet" />
+<link href="css/style1.css" rel="stylesheet" />
+<link href="css/nav.css" rel="stylesheet" />
+<link href="css/style2.css" rel="stylesheet" /><script type="text/javascript" src="jquery.min1.js"></script>
+	  <script type="text/javascript" src="js/jquery.easyAccordion.js"></script>
+      <script type="text/javascript" src="js/utility.js"></script>
+<script type="text/javascript" src="js/protoform.js"></script>
+<script type="text/javascript" src="js/prototype-nw.js"></script>
+<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="js/formee.js"></script>
+<link rel="stylesheet" href="css/formee-structure.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/formee-style.css" type="text/css" media="screen" />
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type='text/javascript'>
+//<![CDATA[
+ $(document).ready(function() {
+  var currentItem = 1;
+  $('#addnew').click(function(){
+   currentItem++;
+   $('#items').val(currentItem);
+var strToAdd = '<tr><td><input name="id" id="id" type="text" size="2" readonly="readonly" value="'+currentItem+'" /></td><td><input name="debate'+currentItem+'" id="debate'+currentItem+'" type="text" /></td><td><input name="issue'+currentItem+'" id ="issue'+currentItem+'"type="text" /></td><td><input name="org'+currentItem+'" id="org'+currentItem+'" type="text" /></td><td><input name="parti'+currentItem+'" id="parti'+currentItem+'" type="text" /></td><td><input name="res'+currentItem+'" id="res'+currentItem+'" type="text" /></td></tr>';
+   $('#data').append(strToAdd);
+   
+  });
+ });
+ 
+//]]>
+</script>
+<script type="text/javascript">
+Event.observe(window,"load",function() {
+     
+	new Protoform('test');     
+	  
+});
+</script>
+</head>
+
+<body>
+<div id="wrapper">
+
+	
+    
+    <div id="logo"><img src="images/logo.png" /></div>
+   
+	<div class="clear"></div>
+    
+    <div id="wrap">
+		 
+</div>
+
+	<div class="clear"></div>
+	<h1>Sign up form</h1>
+	
+<form method="post" class="formee" id="test" action="signup.php">
+<fieldset>
+<legend>Personal Information</legend>
+<div class="grid-12-12">
+<label>Name<em class="formee-req">*</em></label><input type="text" id="name_Req" name="name" title="Required! enter your name" ><br>
+</div>
+<div class="grid-12-12">
+<label>Gender<em class="formee-req">*</em></label>
+<ul class="formee-list">
+<li><input type="radio" name="gender" value="male" id="male"><label>Male</label>
+<li><input type="radio" name="gender" value="female"><label>Female</label>
+</ul>
+</div>
+<div class="grid-12-12">
+<label>Date of Birth<em class="formee-req">*</em></label><input type="date" name="dob" placeholder="Format DD/MM/YYYY"><br>
+</div>
+<div class="grid-12-12">
+<label>Profession<em class="formee-req">*</em></label><input type="text" name="profession"><br>
+</div>
+<div class="grid-12-12">
+<label>Organisation<em class="formee-req">*</em></label><input type="text" name="organisation"><br>
+</div>
+<div class="grid-12-12">
+<label>Contact number<em class="formee-req">*</em></label><input type="text" id="phone_Tel" name="contact" title="Enter a valid phone number"><br>
+</div>
+<div class="grid-12-12">
+<label>City<em class="formee-req">*</em></label><input type="text" name="city"><br>
+</div>
+<div class="grid-12-12">
+<label>Email id<em class="formee-req">*</em></label><input type="text" name="email" id="contact_Req_Email" title="Required! enter a valid email address" ><br>
+</div>
+<div class="grid-12-12">
+<label>User ID<em class="formee-req">*</em></label><input autocomplete="off" type="text" id="name_Req" name="user_id" title="Required! enter the user ID" ><br>
+</div>
+<div class="grid-12-12">
+<label>Password<em class="formee-req">*</em></label><input type="password" name="password"><br>
+</div>
+</fieldset>
+
+<div class="grid-12-12">
+<input class="right" name="submit" id="s9" type="submit"  value="Submit"/> 
+</div>
+
+</form>
+    
+    
+    
+        
+    <div class="clear"></div>
+    
+    <br /><br /><br /><br />
+    
+    
+</div>    
+    
+<br/><br />
+
+<div id="footer">
+				<div class="wrapper">
+					<center><ul id="icons">
+						<li><a href="#" class="normaltip" title="Facebook"><img src="images/icon1.png" alt=""></a></li>
+						<li><a href="#" class="normaltip" title="Delicious"><img src="images/icon2.png" alt=""></a></li>
+						<li><a href="#" class="normaltip" title="Stumble Upon"><img src="images/icon3.png" alt=""></a></li>
+						<li><a href="#" class="normaltip" title="Twitter"><img src="images/icon4.png" alt=""></a></li>
+						<li><a href="#" class="normaltip" title="Linkedin"><img src="images/icon5.png" alt=""></a></li>
+						<li><a href="#" class="normaltip" title="Reddit"><img src="images/icon6.png" alt=""></a></li>
+					</ul></center>
+				</div>
+    	<center>Copyrights @ The Indian Umbrella 2013 <br />* <a href="contact.html">Contact</a> * <a href=#>Privacy</a> * <a href=#>Terms of use</a>* <a href=#>Legal Disclaimer</a> * <a href=#>Help</a> *   
+</div>     
+    
+<script>window.onload = function(){
+	document.getElementById("male").setAttribute("checked");
+	} </script>        
+   
+   
+   
+        
+   		
+        
+            
+
+</body>
+</html>

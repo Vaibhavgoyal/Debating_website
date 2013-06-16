@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sign up</title>
+<style>
+blockquote {
+font-family: Georgia, serif;
+font-size: 14px;
+font-style: italic;
+margin: 0.25em 0;
+padding: 0.25em 40px;
+line-height: 1.45;
+position: relative;
+color: #383838;
+}
+
+</style>
+<link href="style.css" rel="stylesheet" />
+<link href="css/style1.css" rel="stylesheet" />
+
+<link href="css/style2.css" rel="stylesheet" />
+<link href="css/login.css" rel="stylesheet" />
+<script type="text/javascript" src="js/protoform.js"></script>
+<script type="text/javascript" src="js/prototype-nw.js"></script>
+<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="js/formee.js"></script>
+<link rel="stylesheet" href="css/formee-structure.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/formee-style.css" type="text/css" media="screen" />
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type='text/javascript'>
+//<![CDATA[
+ $(document).ready(function() {
+  var currentItem = 1;
+  $('#addnew').click(function(){
+   currentItem++;
+   $('#items').val(currentItem);
+var strToAdd = '<tr><td><input name="id" id="id" type="text" size="2" readonly="readonly" value="'+currentItem+'" /></td><td><input name="debate'+currentItem+'" id="debate'+currentItem+'" type="text" /></td><td><input name="issue'+currentItem+'" id ="issue'+currentItem+'"type="text" /></td><td><input name="org'+currentItem+'" id="org'+currentItem+'" type="text" /></td><td><input name="parti'+currentItem+'" id="parti'+currentItem+'" type="text" /></td><td><input name="res'+currentItem+'" id="res'+currentItem+'" type="text" /></td></tr>';
+   $('#data').append(strToAdd);
+   
+  });
+ });
+ 
+//]]>
+</script>
+<script type="text/javascript">
+Event.observe(window,"load",function() {
+     
+	new Protoform('test');     
+	  
+});
+</script>
+
+</head>
+
+<body>
+<div id="wrapper">
+
+	
+    
+    <div id="logo"><img src="images/logo.jpg" /></div>
+    		
+
+	<div class="clear"></div>
+    <h1>Get in touch</h1>
+    
+    <div id="reach">
+                    <div class="map img-border">
+                      <iframe src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Brooklyn,+New+York,+NY,+United+States&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=61.282355,146.513672&amp;ie=UTF8&amp;hq=&amp;hnear=Brooklyn,+Kings,+New+York&amp;ll=40.649974,-73.950005&amp;spn=0.01628,0.025663&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+                    </div>
+                    <dl>
+                        <dt>Delhi Technological University,<br>Bawana Road, New Delhi</dt>
+                        <dd><span>Mobile: </span>+919901521181</dd>
+                        <dd><span>Telephone: </span>+916243242096</dd>
+                        <dd><span>Fax: </span>+916243243614</dd>
+                        <dd><span>E-mail: </span><a href="#" class="link">maskaravivek@gmail.com</a></dd>
+                    </dl>
+</div>                    
+                     
+    
+
+    
+    
+
+	
+    <form style="width:44%;margin:auto 10px auto 5%;float:left;" class="formee" id="contact"><fieldset>
+	   <div class="grid-12-12">
+       <label>Your Name:</label>
+       <input type="text" name="name" placeholder="Your name">
+       </div>
+	   <div class="grid-12-12">
+	   <label>Your Email:</label>
+	   <input name="email" type="text" placeholder="So that we can get back to you.">
+       </div>
+	   <div class="grid-12-12">
+	   <label>Your Message:</label>
+	   <textarea name="message"></textarea>
+       </div>
+	   <div class="grid-12-12">
+		<input class="right" name="submit" id="s9" type="submit"  value="Submit"/> 
+		</div>
+</fieldset>
+</form>
+
+
+
+
+
+    
+        
+    <div class="clear"></div>
+    
+    <br /><br /><br /><br />
+    
+    
+</div>    
+    
+<br/><br />
+
+<div id="footer">
+				<div class="wrapper">
+					<center><ul id="icons">
+						<li><a href="#" class="normaltip" title="Facebook"><img src="images/icon1.png" alt=""></a></li>
+						<li><a href="#" class="normaltip" title="Delicious"><img src="images/icon2.png" alt=""></a></li>
+						<li><a href="#" class="normaltip" title="Stumble Upon"><img src="images/icon3.png" alt=""></a></li>
+						<li><a href="#" class="normaltip" title="Twitter"><img src="images/icon4.png" alt=""></a></li>
+						<li><a href="#" class="normaltip" title="Linkedin"><img src="images/icon5.png" alt=""></a></li>
+						<li><a href="#" class="normaltip" title="Reddit"><img src="images/icon6.png" alt=""></a></li>
+					</ul></center>
+				</div>
+    	<center>Copyrights @ The Indian Umbrella 2013 <br />* <a href=#>Contact</a> * <a href=#>Privacy</a> * <a href=#>Terms of use</a>* <a href=#>Legal Disclaimer</a> * <a href=#>Help</a> *   
+</div>     
+        
+   
+   
+   
+        
+   		
+        
+            
+
+</body>
+</html>
